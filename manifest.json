@@ -1,0 +1,26 @@
+{
+    "name": "Only Cookie",
+    "description": "Retrieve cookie only in current webpage!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "permissions": ["cookies", "activeTab", "scripting", "clipboardWrite"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "/icons/cookie32.png",
+            "48": "/icons/cookie48.png",
+            "128": "/icons/cookie128.png"
+          }
+      },
+      "icons": {
+        "32": "/icons/cookie32.png",
+        "48": "/icons/cookie48.png",
+        "128": "/icons/cookie128.png" 
+      }
+  }
